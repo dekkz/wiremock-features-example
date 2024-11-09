@@ -1,0 +1,19 @@
+{
+    "id" : "978d8cf8-f17f-4990-8acd-19911d3f4782",
+    "name" : "get-resource-error-404-response-delay",
+    "request" : {
+      "urlPattern" : "/v1/tests/1",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 404,
+      "fixedDelayMilliseconds": "2000",
+	    "bodyFileName" : "get_data_error_404.json",
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      }
+    },
+    "uuid" : "978d8cf8-f17f-4990-8acd-19911d3f4782",
+    "persistent" : true,
+    "priority": 1
+}

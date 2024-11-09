@@ -1,0 +1,19 @@
+{
+    "id" : "d2e54474-03be-4b68-a243-a0546516efee",
+    "name" : "post-resource-example1-201",
+    "request" : {
+      "urlPattern" : "/v1/tests",
+      "method" : "POST"
+    },
+    "response" : {
+      "status" : 201,
+      "bodyFileName" : "post_data.json",
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      }
+    },
+    "uuid" : "d2e54474-03be-4b68-a243-a0546516efee",
+    "persistent" : true,
+    "priority": 1
+}
+  

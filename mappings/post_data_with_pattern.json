@@ -1,0 +1,22 @@
+{
+	"name": "post_data_with_pattern_200",
+	"request": {
+		"urlPathPattern": "/v1/product/([0-9]{5})/validate",
+		"method": "POST",
+		"bodyPatterns": [ {
+			"contains" : "\"PROCESSING\""
+			}]
+	},
+	"response": {
+		"status": 200,
+		"headers": {
+			"Content-Type": "application/json;charset=UTF-8"
+		},
+		"bodyFileName": "post_data_with_pattern_200.json",
+		"transformers": [
+			"response-template"
+		]
+	},
+	"persistent": true,
+	"priority": 1
+}

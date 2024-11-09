@@ -1,0 +1,15 @@
+{
+	"name": "Health",
+	"request": {
+		"url": "/health",
+		"method": "GET"
+	},
+	"response": {
+		"status": 200,
+		"body": "{\r\n\"status\": \"UP\"\r\n}",
+		"headers": {
+			"Content-Type": "application/json"
+		}
+	},
+	"priority": 1
+}

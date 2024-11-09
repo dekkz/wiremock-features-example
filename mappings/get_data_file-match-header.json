@@ -1,0 +1,24 @@
+{
+    "id" : "dbef6814-8f27-41fd-a10f-6b744ee0713a",
+    "name" : "get-resource-example3-return-200",
+    "request" : {
+      "urlPattern" : "/v1/tests",
+      "method" : "GET",
+      "headers": {
+        "Channel": {
+            "equalTo": "APP"
+            //"matches": ".*"
+        }
+      }
+    },
+    "response" : {
+      "status" : 200,
+	  "bodyFileName" : "get_data_file_match_header.json",
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      }
+    },
+    "uuid" : "dbef6814-8f27-41fd-a10f-6b744ee0713a",
+    "persistent" : true,
+    "priority": 1
+}

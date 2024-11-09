@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "473fec0b-d20b-45a5-9856-5d7aeaf8411c",
+		"name": "Wiremock Features Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3846000"
+	},
+	"item": [
+		{
+			"name": "[health] - http://localhost:9090/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[get_data_basic] - http://localhost:9090/v1/tests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/tests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[get_data_error_404_with_response_delay] - http://localhost:9090/v1/tests/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/tests/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"tests",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[get_data_file-match-header] - http://localhost:9090/v1/tests",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Channel",
+						"value": "APP",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9090/v1/tests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[get_data_file] - http://localhost:9090/v1/tests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/tests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[get_data_proxy] - http://localhost:9090/v1/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[post_data_with_pattern] - http://localhost:9090/v1/tests",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Product 1\",\r\n    \"status\": \"PROCESSING\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/v1/product/12345/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"product",
+						"12345",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[post_data] - http://localhost:9090/v1/tests",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/tests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

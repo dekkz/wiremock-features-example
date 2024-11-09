@@ -1,0 +1,18 @@
+{
+    "id" : "1768945d-c8f4-45f3-ad69-f80237ae8fa3",
+    "name" : "get-resource-example1-return-200",
+    "request" : {
+      "urlPattern" : "/v1/tests",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+	    "body": "{\"id\": \"1\", \"result\": \"data\" }",
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      }
+    },
+    "uuid" : "1768945d-c8f4-45f3-ad69-f80237ae8fa3",
+    "persistent" : true,
+    "priority": 1
+}

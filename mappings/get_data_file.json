@@ -1,0 +1,18 @@
+{
+    "id" : "357d4984-eb5b-49cb-9f02-f85b65b9b6d3",
+    "name" : "get-resource-example2-return-200",
+    "request" : {
+      "urlPattern" : "/v1/tests",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+	  "bodyFileName" : "get_data_file.json",
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      }
+    },
+    "uuid" : "357d4984-eb5b-49cb-9f02-f85b65b9b6d3",
+    "persistent" : true,
+    "priority": 2 //trocar'/inverter a prioridade com o 'get_data_basic'
+}

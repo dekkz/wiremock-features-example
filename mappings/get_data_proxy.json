@@ -1,0 +1,14 @@
+{
+    "id" : "0eb1293a-b118-48a3-8eab-fb66ab1b33cc",
+    "name" : "get-resource-example-proxy",
+    "request" : {
+      "urlPattern" : "/v1/employees",
+      "method" : "GET"
+    },
+    "response" : {
+        "proxyBaseUrl" : "https://dummy.restapiexample.com/api"
+      },
+    "uuid" : "0eb1293a-b118-48a3-8eab-fb66ab1b33cc",
+    "persistent" : true,
+    "priority": 1
+}

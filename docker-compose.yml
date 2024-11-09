@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  wiremock:
+    image: wiremock/wiremock:3.9.1
+    volumes:
+      - ./__files:/home/wiremock/__files
+      - ./mappings:/home/wiremock/mappings
+    ports:
+      - 9090:9090

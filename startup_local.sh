@@ -1,0 +1,1 @@
+java -jar wiremock-standalone-3.9.1.jar --global-response-templating --no-request-journal --port 9090 --verbose
